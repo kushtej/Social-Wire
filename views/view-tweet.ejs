@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+	 
+    <strong>Welcome</strong><%=name%>
+
+
+
+
+
+     <form action="/login/my-moments" method="GET">
+    <h1>My Moments(My Tweet History)</h1>
+    <br><br>
+   
+    
+    
+         <strong>You told: </strong> <td><%= data%></td>
+         <br><br>
+
+         <form action="/login/my-moments/view/next" method="GET">
+              <strong>You told: </strong> <td><%= data%></td>
+         <br><br>
+         </form>
+    
+
+  </form>
+
+
+
+ 
+</body>
+</html>
+  

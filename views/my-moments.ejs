@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+      .Welcome{
+        text-align: center;
+        font-size: 25px; 
+      }
+      .q{
+        padding: 20px;
+      }
+
+    </style>
+
+    <script src="main.js"></script>
+</head>
+<body>
+	 <div class="Welcome">
+    Welcome <strong><%=name%></strong><br>
+    <strong><%=count%></strong> people like you<br><br>
+  </div>
+
+
+
+<div class="q">
+    <form action="/login/my-moments" method="GET">
+    <h1>My Moments(My Tweet History)</h1>
+    <br><br>
+   
+    
+    <% for(var i=0; i < data.length; i++) { %>
+        <li> <strong>You Tweeted: "</strong> <td><%= data[i]%></td><strong> "</strong></li>
+         <br><br>
+<!--          <form action="/login/my-moments/like" method="POST">
+         <button type=”submit” value=”submit>Like</button> 
+         </form>
+          -->
+         <!-- <button type=”submit” value=”submit”>comment</button><br><br> -->
+    <% } %>
+
+  </form>
+
+<!-- <form action="/login/my-moments/view" method="GET">
+    <button type=”submit” value=”submit>view tweet</button> 
+</form>
+ -->
+ </div>
+</body>
+</html>
+  

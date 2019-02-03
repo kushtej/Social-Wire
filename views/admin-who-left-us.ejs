@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+      <style type="text/css">
+      .q{
+           padding: 20px;
+        }
+      </style>
+
+    <script src="main.js"></script>
+</head>
+<body>
+	
+<div class="q">
+    <form action="/admin/leave" method="GET">
+    <h1>Who Left Us</h1>
+     <h4>Our Current Most liked user is<br></h4>
+          username:</strong> <td><%= m%></td><br>
+          No of likes:</strong> <td><%= n%></td><br>
+ 
+    <br><br>
+     
+    <% for(var i=0; i < id.length; i++) { %>
+         <strong>Account Id : </strong> <td><%= id[i]%></td><br>
+         <strong>Username : </strong> <td><%= name[i]%></td><br>
+         <strong>First Name : </strong> <td><%= fname[i]%></td><br>
+         <strong>Last Name : </strong> <td><%= lname[i]%></td><br>
+         <strong>Leaving time : </strong> <td><%= time[i]%></td><br><br><br><br>
+    <% } %>
+
+  </form>
+
+ </div>
+</body>
+</html>
+  

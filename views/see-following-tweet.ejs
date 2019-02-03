@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+   <!--  <script type="text/javascript">
+    function disableF5(e) { if ((e.which || e.keyCode) == 116 || (e.which || e.keyCode) == 82) e.preventDefault(); };
+      $(document).ready(function(){
+     $(document).on("keydown", disableF5);
+    });
+    </script> -->
+    
+    <style type="text/css">
+      .Welcome{
+        text-align: center;
+        font-size: 25px; 
+      }
+      .q{
+        padding: 20px;
+      }
+
+    </style>
+</head>
+<body>
+	 <div class="Welcome">
+     Welcome <strong><%=name%></strong><br>
+     </div>
+     <div class="q">
+    <form action="/login/see-following-tweet" method="GET">
+        <h1>The Tweets from people you are following</h1>
+        <br><br>
+   
+    
+    <% for(var i=0; i < follow.length; i++) { %>
+    <% if(follow[i]!=undefined) { %>
+         <strong>They tweeted: "</strong> <td><%= follow[i]%></td><strong> "</strong>
+         <%  delete follow[i];  %>
+         <br><br>
+    <% }} %>
+    <%  delete follow;  %>
+
+  </form>
+ </div>
+ 
+</body>
+</html>
+  
