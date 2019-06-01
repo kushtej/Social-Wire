@@ -1,0 +1,16 @@
+body {
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #484848;
+    background-color: #fff;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   }
+
+ .topright {
+   position: absolute;
+   top: 8px;
+   right: 16px;
+   font-size: 18px;
+  }

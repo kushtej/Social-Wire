@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="/static/css/mainpage.css" />
+</head>
+
+<body>
+
+
+
+
+  <div class="">
+    <div class="topnav">
+      <form action="/login/see-following-tweet" class="floated" style="width:120px" method="GET">
+        <!--   <a href="mainpage1.htm">Home</a>
+       <a href="My Profile.htm">My Profile</a>
+       <a href="my-moments.htm">My Moments</a>
+       <a href="Settings.htm">Settings</a>-->
+        <button type=”submit” class="button" style="width: 200px" value=”submit”>Other's Tweets</button>
+      </form>
+
+
+      <form action="/login/my-moments" class="floated" method="GET">
+        <button type=”submit” class="button" class="floated" style="margin-left: 70px;width: 200px" value=”submit”>My
+          Moments</button>
+      </form>
+
+      <div class="search-container">
+        <form action="/login/search" class="floated" style="margin-left: 200px;" method="POST">
+          <input type="text" name="searchuser" placeholder="Search for this user">
+          <button type=”submit” value=”submit” class="fa fa-search"></button>
+        </form>
+      </div>
+
+      <form action="/login/my-profile" class="floated" style="margin-left: 90px;width: 120px" method="GET">
+        <button type=”submit” style="width: 200px;" class="button" value=”submit”>My Profile</button>
+      </form>
+
+      <form action="/login/settings" method="GET">
+        <button type=”submit” style="margin-left: 70px;width: 200px" class="button" value=”submit”>Settings</button>
+      </form>
+    </div>
+    <br><br>
+
+    <h1 style="text-align: center;">Where have you been?<br />We've been waiting for you...</h1>
+    <br><br><br><br><br><br><br><br><br>
+
+    <form action="/login/post" method="POST">
+
+      <div class="col-xs-4">
+
+        <input type="text" name="usertweet" placeholder="Tweet Something..." class="form-control"
+          style="padding:30px; margin-left: 400px;border-radius: 20px;" id="ex3" required required
+          title="the tweet must have atleast 1 character" type="text">
+      </div>
+      <!--  <input type="text" name="usertweet" pattern=".{8,12}" required title="Atleast 8 letters must be in a tweet!" placeholder="Tweet Something..." class="tweet">  -->
+      <button type=”submit” style="margin-left: 420px;" value=”submit” class="button1">tweet</button>
+    </form>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/signup.css" />
+    <script src="signup.js"></script>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Welcome to SOCIAL WIRE!</h1><br><br><br><br>
+    <div class="heading">
+        <h1>Create your account</h1>
+        <p>Please fill in this form to create an account.</p>
+
+        <form action="/signup/create" method="POST">
+            <div class="Signup">
+                <input type="text" name="username" pattern=".{4,8}" required title="4 to 8 letters"
+                    placeholder="username" required style="padding:10px;margin-left: 200px;">
+                <input type="password" name="password" pattern=".{8,12}" required title="8 to 12 characters"
+                    placeholder="password" required style="padding:10px;">
+                <input type="password" name="repassword" pattern=".{8,12}" required title="8 to 12 characters"
+                    style="padding:10px;" placeholder="Repeat password" required>
+
+                <button type=”submit” value=”submit” style="padding:12px;" class="button">signup</button>
+            </div>
+            <br><br><br><br>
+
+    </div>
+    </form>
+    <h1 style="text-align: center;">Hurry! We are Waiting for you...</h1><br>
+    <h3 style="text-align: center;">To know about Us </h3>
+
+    <a href="/templates/sorry/site-construction.htm">  <button style="padding: 10px;" class="button1">Click Here..</button> </a>
+
+</body>
+
+</html>
