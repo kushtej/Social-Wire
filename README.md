@@ -3,10 +3,24 @@ Basic Implementation of Twitter Social Media Platform and my first ever Web Dev 
 
 __PREVIEW:__
 
+1.Login :
+
 ![Alt text](preview/1.Login.png?raw=true "Login")
+
+2.Homepage :
+
 ![Alt text](preview/3.Homepage.png?raw=true "Homepage")
+
+3.User-Edit-Profile :
+
 ![Alt text](preview/4.Edit-Profile.png?raw=true "User-Edit-Profile")
-![Alt text](preview/5.Admin-Login.png?raw=true "Administrator-Login")
+
+4.Admin-Login :
+
+![Alt text](preview/5.Admin-Login.png?raw=true "Admin-Login")
+
+
+> There are more in Preview Directory.
 
 
 __Steps to Install NodeJS and NPM:__
