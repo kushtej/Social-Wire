@@ -11,7 +11,7 @@ create table users
 		firstname varchar(255) default "I'd Rather Not Say",
 		lastname varchar(255) default "I'd Rather Not Say",
 		sex varchar(20) default "I'd Rather Not Say",
-		email varchar(20) default "I'd Rather Not Say",
+		email varchar(30) default "I'd Rather Not Say",
 		phno varchar(20) default "I'd Rather Not Say",
 		bdate date,
 		status varchar(255) default "Hi Social Wire",
@@ -83,7 +83,7 @@ create table admin
 
 insert into admin(admin_id,admin_name,admin_password) values(1,'admin','admin');
 
---for procedure 
+/* for procedure */
 
 drop PROCEDURE if exists No_like;
 DELIMITER $$
@@ -97,7 +97,7 @@ END $$
 DELIMITER ;
 
 
--- for trigger
+/* for trigger */
 
 CREATE TABLE trigger_users (
         id INT AUTO_INCREMENT PRIMARY KEY,
@@ -127,6 +127,6 @@ END$$
 DELIMITER ;
 
 
---NOTE: You Can drop trigger with this command
+/*NOTE: You Can drop trigger with this command */
 /*DROP TRIGGER trigger_users.after_user_delete;*/
 
