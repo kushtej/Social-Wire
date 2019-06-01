@@ -1,6 +1,10 @@
 # Twitter Clone Using NodeJs and MySQL Backend.
 Basic Implementation of Twitter Social Media Platform and my first ever Web Dev project.
 
+
+![Alt text](preview/NodeJs-MySQL.png?raw=true " ")
+
+
 __PREVIEW:__
 
 1.Login :
