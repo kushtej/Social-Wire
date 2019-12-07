@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 var mysqlConnection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Kush007_tej',
+    password: 'root',
     database: 'twitter',
     multipleStatements: true
 });
